@@ -28,6 +28,7 @@ header {
   position: absolute;
   z-index: 100;
   cursor: pointer;
+    border: none;
 }
 
 #ham>svg {
@@ -131,3 +132,31 @@ header>h1>a>img {
   color: #081435;
   text-decoration: underline;
 }
+.tab_menu{    
+    width: 88px;
+  height: 100%;
+      position: fixed;
+  transition: 0.5;
+  padding: 0px 20px;
+  background-color: #d0d0d1;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;left: -300%;
+    top: 130px;}
+.tab_gnb{
+  padding-top: 130px;
+}
+.tab_gnb span{font-size: 0;}
+.tab_gnb a{display: block;
+    width: 68px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 50px;
+    transition: 0.5s;}
+.tab_gnb li{width: 68px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.tab_gnb li>a>svg{width: 50px;height: 50px;}
+.tab_gnb a:hover{    color: #335dff;
+    background-color: #fff;}
