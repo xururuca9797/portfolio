@@ -5,6 +5,7 @@ section {
   height: 100%;
   position: fixed;
   overflow: hidden;
+  padding-left: 230px;
 }
 
 section img {
