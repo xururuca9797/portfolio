@@ -9,21 +9,19 @@ section {
   /* background-color: darkgrey; */
 }
 
-.p_lt {}
-
 .p_lt>ul {
   width: 100%;
   height: 40px;
   border-bottom: 1px solid #ccc;
   position: relative;
   display: flex;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: capitalize;
 }
 
 .p_lt>ul>li {
   position: absolute;
-  padding: 7px 0px;
+  padding: 10px 0px;
 }
 
 .p_lt>ul>li,
@@ -42,4 +40,48 @@ section {
 .p_lt>ul>li:last-child {
   top: 0;
   right: 10px;
+}
+
+/* 콘텐츠 영역 */
+.cont01 {
+  width: 100%;
+  height: 900px;
+}
+
+.cont01_left {
+  border-right: 1px solid #ccc;
+  width: 400px;
+  height: 900px;
+  font-size: 14px;
+  position: absolute;
+  top: 40px;
+  background-image: url('../image/about_cont01_ba.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px 700px;
+}
+
+.cont01_left>p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.cont01_left>p:first-child {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 40px auto 20px auto;
+  background-color: #f68472;
+}
+
+.cont01_left>p>img {
+  width: 150px;
+}
+
+.cont01_left>ul {
+  padding-left: 40px;
+}
+
+.cont01_left>ul>li {
+  line-height: 40px;
 }

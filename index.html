@@ -118,7 +118,7 @@
     var num = 0; //0닫힘, 1열림
     $("#ham").click(function () {
       if (num == 1) {
-        //닫힘상태면 열어라
+        //큰메뉴
         num = 0; //열림상태
         $(".h_inner").animate({
             left: "0",
@@ -130,14 +130,19 @@
           },
           600
         );
-        $("section").animate({
-          padding: "0px 0px 0px 230px",
-        });
-        $("section img:first-child").animate({
-          left: "0%",
-        });
+        $('header').animate({
+          width: "230px"
+        }, 600);
+        $('header>h1').animate({
+          width: "180px",
+          margin: "0 auto"
+        }, 600);
+
+        $('section').animate({
+          "padding-left": "230px"
+        }, 600);
       } else if (num == 0) {
-        //열림상태면 닫아라
+        //작은메뉴
 
         num = 1; //닫힘상태
         $(".h_inner").animate({
@@ -150,12 +155,17 @@
           },
           600
         );
-        $("section").animate({
-          padding: "0px 0px 0px 80px",
-        });
-        $("section img:first-child").animate({
-          left: "-7%",
-        });
+        $('header').animate({
+          width: "95px"
+        }, 600);
+        $('header>h1').animate({
+          width: "71px",
+          margin: "20px 10px 0px 10px"
+        }, 600);
+
+        $('section').animate({
+          "padding-left": "88px"
+        }, 600);
       }
     }); ///click///
   </script>

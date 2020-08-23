@@ -118,21 +118,38 @@
         </div>
     </header>
     <section>
-        <h2 class="title_none">메인페이지</h2>
+        <h2 class="title_none">어바웃 페이지</h2>
         <article class="p_lt">
+            <h2 class="title_none">현재 위치 표기</h2>
             <ul>
                 <li><a href="../index.html" title="메인으로가기">Home</a> > <a href="./about.html" title="현재페이지">About</a>
                 </li>
                 <li>&#xFF0D;</li>
-                <li>WEB_DEVELOPER</li>
+                <li>web developer</li>
             </ul>
+        </article>
+        <article class="cont01">
+            <h2 class="title_none">어바웃페이지</h2>
+            <div class="cont01_left">
+                <p><img src="../image/about_cont01_face.png" alt="증명사진"></p>
+                <p>윤유림<br>yurim.yun</p>
+                <ul>
+                    <li>1997.05 .05</li>
+                    <li>Gongneung-ro, Nowon-gu, Seoul</li>
+                    <li>zeze-@naver.com</li>
+                    <li>010-5452-9497</li>
+                </ul>
+            </div>
+            <div class="cont01_right">
+
+            </div>
         </article>
     </section>
     <script>
         var num = 0; //0닫힘, 1열림
         $("#ham").click(function () {
             if (num == 1) {
-                //닫힘상태면 열어라
+                //큰메뉴
                 num = 0; //열림상태
                 $(".h_inner").animate({
                         left: "0",
@@ -144,8 +161,19 @@
                     },
                     600
                 );
+                $('header').animate({
+                    width: "230px"
+                }, 600);
+                $('header>h1').animate({
+                    width: "180px",
+                    margin: "0 auto"
+                }, 600);
+
+                $('section').animate({
+                    "padding-left": "230px"
+                }, 600);
             } else if (num == 0) {
-                //열림상태면 닫아라
+                //작은메뉴
 
                 num = 1; //닫힘상태
                 $(".h_inner").animate({
@@ -158,6 +186,17 @@
                     },
                     600
                 );
+                $('header').animate({
+                    width: "95px"
+                }, 600);
+                $('header>h1').animate({
+                    width: "71px",
+                    margin: "20px 10px 0px 10px"
+                }, 600);
+
+                $('section').animate({
+                    "padding-left": "88px"
+                }, 600);
             }
         }); ///click///
     </script>
