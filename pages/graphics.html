@@ -4,23 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yurim Portfolio_about</title>
+    <title>Yurim Portfolio_graphics</title>
     <script src="../script/jquery-1.7.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/baes.css" />
     <link rel="stylesheet" type="text/css" href="../css/core.css" />
-    <link rel="stylesheet" type="text/css" href="../css/about.css" />
+    <link rel="stylesheet" type="text/css" href="../css/graphics.css" />
     <style>
-        #gnb>li:first-child>a {
-            background-color: #335dff;
-            color: #fff;
-        }
-
-        .tab_gnb li:first-child {
-            background-color: rgb(230, 230, 230);
-        }
-
-        .tab_gnb li:first-child a {
+        .p_lt>ol>li:nth-child(2) a {
+            font-weight: bold;
             color: #0b20fc;
+        }
+
+        .p_lt>ol>li:nth-child(2) a span {
+            text-decoration: line-through;
         }
     </style>
 </head>
@@ -40,7 +36,7 @@
         <div class="h_inner">
             <ul id="gnb">
                 <li>
-                    <a href="./pages/about.html" title="about"><svg viewBox="0 0 20 20" fill="currentColor"
+                    <a href="about.html" title="about"><svg viewBox="0 0 20 20" fill="currentColor"
                             class="emoji-happy w-6 h-6">
                             <path fill-rule="evenodd"
                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
@@ -68,7 +64,7 @@
                                 clip-rule="evenodd"></path>
                         </svg>design</a>
                     <ul class="sub">
-                        <li><a href="graphics.html" w_graphics">w_graphics</a></li>
+                        <li><a href="graphics.html" title="w_graphics">w_graphics</a></li>
                         <li><a href="#none" title="artwork">artwork</a></li>
                     </ul>
                 </li>
@@ -118,31 +114,68 @@
         </div>
     </header>
     <section>
-        <h2 class="title_none">어바웃 페이지</h2>
+        <h2 class="title_none">웹그래픽 페이지</h2>
         <article class="p_lt">
             <h2 class="title_none">현재 위치 표기</h2>
             <ul>
-                <li><a href="../index.html" title="메인으로가기">Home</a> > <a href="./about.html" title="현재페이지">About</a>
+                <li><a href="../index.html" title="메인으로가기">Home</a> > <a href="graphics.html" title="디자인페이지">design</a>
+                    > <a href="graphics.html" title="현재페이지">w_graphics</a>
                 </li>
                 <li>&#xFF0D;</li>
                 <li>web developer</li>
             </ul>
-        </article>
-        <article class="cont01">
-            <h2 class="title_none">어바웃페이지</h2>
-            <div class="cont01_left">
-                <p><img src="../image/about_cont01_face.png" alt="증명사진"></p>
-                <p>윤유림<br>yurim.yun</p>
-                <ul>
-                    <li>1997.05 .05</li>
-                    <li>Gongneung-ro, Nowon-gu, Seoul</li>
-                    <li>zeze-@naver.com</li>
-                    <li>010-5452-9497</li>
-                </ul>
-            </div>
-            <div class="cont01_right">
+            <ol>
+                <li>design<span>_w</span></li>
+                <li><a href="graphics.html" title="">
 
-            </div>
+                        <span class="en">#detail page</span>
+                        <span class="ko">#상세페이지</span>
+
+                    </a></li>
+                <li><a href="graphics_event.html" title="">
+
+                        <span class="en">#event</span>
+                        <span class="ko">#이벤트</span>
+                    </a></li>
+                <li><a href="graphics.html" title="">
+
+                        <span class="en">#banner</span>
+                        <span class="ko">#배너</span>
+                    </a></li>
+            </ol>
+        </article>
+        <!-- 콘텐츠영역 -->
+        <article class="cont">
+            <h2 class="title_none">all</h2>
+            <ul class="cont_01">
+                <li><a href="http://www.fairplay142.com/shop/shopdetail.html?branduid=139560" title="자시히보기">
+                        <img src="http://www.fairplay142.com/shopimages/efairplay/0170010081182.jpg?1564016507" alt="">
+                        <p class="title"><span>브랜드명</span>분야</p>
+                        <span></span>
+                    </a>
+                </li>
+                <!-- 기준 -->
+            </ul>
+            <button class="more">more</button>
+            <ul class="cont_02">
+                <li><a href="#none" title="자시히보기">
+                        <p class="title"><span>브랜드명</span>분야</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <!-- 기준 -->
+            </ul>
         </article>
     </section>
     <script>
@@ -172,6 +205,10 @@
                 $('section').animate({
                     "padding-left": "230px"
                 }, 600);
+
+                $('.cont ul li').animate({
+                    "width": "330px"
+                }, 600);
             } else if (num == 0) {
                 //작은메뉴
 
@@ -197,8 +234,16 @@
                 $('section').animate({
                     "padding-left": "88px"
                 }, 600);
+                $('.cont ul li').animate({
+                    "width": "400px"
+                }, 600);
             }
         }); ///click///
+        //더보기 버튼
+        $('.more').click(function () {
+            $(".cont_02").fadeIn(600);
+            $(".more").fadeOut(300);
+        });
     </script>
 </body>
 

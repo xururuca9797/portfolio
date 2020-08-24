@@ -1,47 +1,5 @@
 @charset "utf-8";
 
-section {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  padding-left: 230px;
-  /* background-color: darkgrey; */
-}
-
-.p_lt>ul {
-  width: 100%;
-  height: 40px;
-  border-bottom: 1px solid #ccc;
-  position: relative;
-  display: flex;
-  font-size: 16px;
-  text-transform: capitalize;
-}
-
-.p_lt>ul>li {
-  position: absolute;
-  padding: 10px 0px;
-}
-
-.p_lt>ul>li,
-.p_lt>ul>li a {
-  color: #4d4d4d;
-}
-
-.p_lt>ul>li:first-child {
-  left: 0;
-}
-
-.p_lt>ul>li:nth-child(2) {
-  left: 50%;
-}
-
-.p_lt>ul>li:last-child {
-  top: 0;
-  right: 10px;
-}
-
 /* 콘텐츠 영역 */
 .cont01 {
   width: 100%;
