@@ -4,6 +4,7 @@
 .cont01 {
   width: 100%;
   height: 900px;
+  position: relative;
 }
 
 .cont01_left {
@@ -12,7 +13,7 @@
   height: 900px;
   font-size: 14px;
   position: absolute;
-  top: 40px;
+  left: 0;
   background-image: url('../image/about_cont01_ba.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -22,6 +23,13 @@
 .cont01_left>p {
   text-align: center;
   font-size: 18px;
+}
+
+.cont01_left_title {
+  font-size: 20px;
+  border-bottom: 1px dotted #333;
+  font-weight: bold;
+  width: 90%;
 }
 
 .cont01_left>p:first-child {
@@ -40,6 +48,23 @@
   padding-left: 40px;
 }
 
+.cont01_left>ul:last-child {
+  padding-top: 15px;
+}
+
 .cont01_left>ul>li {
   line-height: 40px;
+}
+
+.cont01_right {
+  width: 80%;
+  height: 900px;
+  font-size: 14px;
+  position: absolute;
+  padding: 40px;
+  left: 400px;
+}
+
+.cont01_right>ul>li:first-child {
+  font-size: 25px;
 }
