@@ -20,7 +20,7 @@
   background-position: 0px 700px;
 }
 
-.cont01_left > p {
+.cont01_left>p {
   text-align: center;
   font-size: 18px;
 }
@@ -32,7 +32,7 @@
   width: 90%;
 }
 
-.cont01_left > p:first-child {
+.cont01_left>p:first-child {
   width: 200px;
   height: 200px;
   border-radius: 20px;
@@ -40,19 +40,19 @@
   background-color: #f68472;
 }
 
-.cont01_left > p > img {
+.cont01_left>p>img {
   width: 150px;
 }
 
-.cont01_left > ul {
+.cont01_left>ul {
   padding-left: 40px;
 }
 
-.cont01_left > ul:last-child {
+.cont01_left>ul:last-child {
   padding-top: 15px;
 }
 
-.cont01_left > ul > li {
+.cont01_left>ul>li {
   line-height: 40px;
 }
 
@@ -65,36 +65,41 @@
   left: 400px;
 }
 
-.cont01_right > ul > li:first-child {
+.cont01_right>ul>li:first-child {
   font-size: 25px;
   padding-bottom: 20px;
   font-weight: bold;
 }
 
-.progressbar-title > p {
+.progressbar-title>p {
   display: inline-block;
   font-weight: bold;
 }
+
 .percent {
   position: absolute;
   left: 75%;
 }
+
 .progressbar {
   position: absolute;
   width: 0%;
   height: 100%;
 }
+
 .progress01,
 .progress03,
 .progress02,
 .progress04 {
   background-color: #335dff;
 }
+
 .progress05,
 .progress06,
 .progress07 {
   background-color: #f68472;
 }
+
 .bar-container {
   border: 1px solid #ccc;
   position: relative;
@@ -103,6 +108,12 @@
   margin-bottom: 20px;
   display: block;
 }
+
 .software_skill {
   padding-bottom: 20px;
+}
+
+.history li {
+  font-size: 17px;
+  line-height: 25px;
 }
