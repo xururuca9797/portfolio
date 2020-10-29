@@ -13,7 +13,7 @@ header {
   width: 230px;
   height: 100%;
   position: fixed;
-  transition: 0.5;
+  transition: 0.5s;
   overflow: hidden;
   z-index: 100;
 }
@@ -32,22 +32,20 @@ header {
   border: none;
 }
 
-#ham>svg {
+#ham > svg {
   color: #fff;
 }
 
-header>h1 {
+header > h1 {
   padding-top: 30px;
   width: 180px;
   height: 150px;
   margin: 0 auto;
 }
 
-header>h1>a>img {
+header > h1 > a > img {
   width: 100%;
 }
-
-
 
 .h_inner {
   width: 230px;
@@ -57,7 +55,7 @@ header>h1>a>img {
   padding-left: 15px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
-  transition: 0.5;
+  transition: 0.5s;
   overflow: hidden;
 }
 
@@ -68,7 +66,7 @@ header>h1>a>img {
   font-family: "NanumSquare", sans-serif !important;
 }
 
-#gnb>li {
+#gnb > li {
   width: 100%;
   text-transform: capitalize;
   position: relative;
@@ -76,11 +74,11 @@ header>h1>a>img {
   transition: 0.5s;
 }
 
-#gnb>li:nth-child(2) {
+#gnb > li:nth-child(2) {
   height: 70px;
 }
 
-#gnb>li:nth-child(3) {
+#gnb > li:nth-child(3) {
   height: 70px;
 }
 
@@ -90,7 +88,7 @@ header>h1>a>img {
   margin-right: 10px;
 }
 
-#gnb>li>a {
+#gnb > li > a {
   width: 100%;
   height: 55px;
   display: block;
@@ -100,24 +98,24 @@ header>h1>a>img {
   transition: 0.5s;
 }
 
-#gnb>li:first-child a {
+#gnb > li:first-child a {
   margin: 5px 0px;
 }
 
-#gnb>li>a:hover {
+#gnb > li > a:hover {
   background-color: #335dff;
   color: #fff;
 }
 
-#gnb>li:nth-child(2):hover {
+#gnb > li:nth-child(2):hover {
   height: 170px;
 }
 
-#gnb>li:nth-child(3):hover {
+#gnb > li:nth-child(3):hover {
   height: 140px;
 }
 
-.sub>li {
+.sub > li {
   padding-left: 40px;
   width: 100%;
   font-size: 17px;
@@ -125,13 +123,13 @@ header>h1>a>img {
   font-weight: bold;
 }
 
-.sub>li>a {
+.sub > li > a {
   color: #6b789c;
   display: block;
   transition: 0.5s;
 }
 
-.sub>li>a:hover {
+.sub > li > a:hover {
   color: #081435;
   text-decoration: underline;
 }
@@ -140,7 +138,7 @@ header>h1>a>img {
   width: 88px;
   height: 100%;
   position: fixed;
-  transition: 0.5;
+  transition: 0.5s;
   padding: 0px 20px;
   background-color: #f68472;
   border-top-right-radius: 40px;
@@ -171,11 +169,10 @@ header>h1>a>img {
   border-radius: 20%;
 }
 
-.tab_gnb li>a>svg {
+.tab_gnb li > a > svg {
   width: 30px;
   margin: 7px 7px;
 }
-
 
 .tab_gnb li:hover {
   background-color: rgb(230, 230, 230);
@@ -193,8 +190,7 @@ section {
   padding-left: 230px;
 }
 
-
-.p_lt>ul {
+.p_lt > ul {
   width: 100%;
   height: 40px;
   border-bottom: 1px solid #ccc;
@@ -204,25 +200,25 @@ section {
   text-transform: capitalize;
 }
 
-.p_lt>ul>li {
+.p_lt > ul > li {
   position: absolute;
   padding: 10px 0px;
 }
 
-.p_lt>ul>li,
-.p_lt>ul>li a {
+.p_lt > ul > li,
+.p_lt > ul > li a {
   color: #4d4d4d;
 }
 
-.p_lt>ul>li:first-child {
+.p_lt > ul > li:first-child {
   left: 0;
 }
 
-.p_lt>ul>li:nth-child(2) {
+.p_lt > ul > li:nth-child(2) {
   left: 50%;
 }
 
-.p_lt>ul>li:last-child {
+.p_lt > ul > li:last-child {
   top: 0;
   right: 10px;
 }
